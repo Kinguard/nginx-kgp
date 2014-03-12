@@ -1,0 +1,18 @@
+Source: nginx-opi
+Section: devel
+Priority: optional
+Maintainer: Tor Krill <tor@openproducts.se>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.4
+
+Package: nginx-opi
+Architecture: all
+Depends: ${misc:Depends},
+ mysql-server,
+ nginx-light,
+ php5-xcache,
+ php5-fpm,
+ php5-mysqlnd
+Conflicts: libapache2-mod-php5filter, libphp5-embed
+Description: OPI generic nginx config
+ Sets up deps and infrastructure for OPI nginx usage
