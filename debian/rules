@@ -11,9 +11,3 @@
 
 %:
 	dh $@ 
-
-override_dh_fixperms:
-	dh_fixperms
-	chmod 550 $(CURDIR)/debian/nginx-opi/etc/nginx/certs
-	chmod 440 $(CURDIR)/debian/nginx-opi/etc/nginx/certs/*
-	chown -R www-data:www-data $(CURDIR)/debian/nginx-opi/etc/nginx/certs 
