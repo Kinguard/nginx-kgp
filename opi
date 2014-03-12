@@ -6,8 +6,8 @@ server {
 	listen 443 ssl;
 	server_name localhost;
 
-	ssl_certificate /etc/nginx/certs/cert.pem;
-	ssl_certificate_key /etc/nginx/certs/priv_key.pem;
+	ssl_certificate /etc/ssl/certs/opi.pem;
+	ssl_certificate_key /etc/ssl/private/opi.key;
 
 	client_max_body_size 10G;
 	fastcgi_buffers 64 4K;
