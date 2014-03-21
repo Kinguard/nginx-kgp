@@ -8,6 +8,7 @@ Standards-Version: 3.9.4
 Package: nginx-opi
 Architecture: all
 Depends: ${misc:Depends},
+ ssl-cert,
  mysql-server,
  nginx-light,
  php5-xcache,

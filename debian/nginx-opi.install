@@ -1,2 +1,4 @@
 opi		/etc/nginx/sites-available
 robots.txt	/var/www/static
+opi-tmpcert.pem	/usr/share/nginx-opi
+opi-tmpkey.pem	/usr/share/nginx-opi

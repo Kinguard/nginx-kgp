@@ -1,3 +1,15 @@
+nginx-opi (1.0.6) testing; urgency=low
+
+  * Dont remove opi from sites available only enabled
+
+ -- Tor Krill <tor@openproducts.se>  Fri, 21 Mar 2014 11:48:55 +0100
+
+nginx-opi (1.0.5) testing; urgency=low
+
+  * Added temp certs when no cert is installed to let nginx start
+
+ -- Tor Krill <tor@openproducts.se>  Fri, 21 Mar 2014 10:57:38 +0100
+
 nginx-opi (1.0.4) testing; urgency=low
 
   * Remove certs and use OPI defaults instead

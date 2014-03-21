@@ -20,14 +20,31 @@ set -e
 
 case "$1" in
     configure)
+
 	if [ -e /etc/nginx/sites-enabled/default ]
 	then
 		rm /etc/nginx/sites-enabled/default
 	fi
+
 	if [ ! -e /etc/nginx/sites-enabled/opi ]
 	then
 		ln -s /etc/nginx/sites-available/opi /etc/nginx/sites-enabled/
 	fi
+
+	if [ ! -e /etc/ssl/certs/opi.pem ]
+	then
+		ln -s /usr/share/nginx-opi/opi-tmpcert.pem /etc/ssl/certs/opi.pem
+	fi
+
+	if [ ! -e /etc/ssl/private/opi.key ]
+	then
+		ln -s /usr/share/nginx-opi/opi-tmpkey.pem /etc/ssl/private/opi.key
+	fi
+
+	# Fix permissions
+	chmod 0640 /usr/share/nginx-opi/opi-tmpkey.pem
+	chown root:ssl-cert /usr/share/nginx-opi/opi-tmpkey.pem
+
 	invoke-rc.d --quiet nginx restart
     ;;
 

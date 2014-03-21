@@ -21,14 +21,24 @@ set -e
 
 case "$1" in
     purge|remove|upgrade|failed-upgrade|abort-install|abort-upgrade|disappear)
-	if [ -e /etc/nginx/sites-available/opi ]
-	then
-		rm /etc/nginx/sites-available/opi
-	fi
+
+	rm -f /etc/nginx/sites-enabled/opi
+
 	if [ ! -e /etc/nginx/sites-enabled/default ]
 	then
 		ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/
 	fi
+
+	if [ -L /etc/ssl/private/opi.key ]
+	then
+		rm -f /etc/ssl/private/opi.key
+	fi
+
+	if [ -L /etc/ssl/certs/opi.pem ]
+	then
+		rm -f /etc/ssl/certs/opi.pem
+	fi
+
 	invoke-rc.d --quiet nginx restart
     ;;
 
