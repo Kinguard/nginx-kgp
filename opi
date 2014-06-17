@@ -3,6 +3,18 @@ upstream php-handler {
 }
 
 server {
+	listen 80;
+	server_name localhost;
+
+	location / {
+		root /var/www/static;
+	}
+
+	location /oc {
+		rewrite ^(.*) https://$host$1 permanent;
+	}
+}
+server {
 	listen 443 ssl;
 	server_name localhost;
 
