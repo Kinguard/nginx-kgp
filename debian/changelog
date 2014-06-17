@@ -1,3 +1,9 @@
+nginx-opi (1.0.7) testing; urgency=low
+
+  * Added default HTTP server config and redirect http to https on /oc
+
+ -- PA Nilsson <pa@openproducts.se>  Tue, 17 Jun 2014 20:56:20 +0200
+
 nginx-opi (1.0.6) testing; urgency=low
 
   * Dont remove opi from sites available only enabled
