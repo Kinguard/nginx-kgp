@@ -11,6 +11,7 @@ server {
 	}
 
 	location /oc {
+	#redirect http requests for owncloud to https
 		rewrite ^(.*) https://$host$1 permanent;
 	}
 }
