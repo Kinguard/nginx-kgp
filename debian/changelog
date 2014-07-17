@@ -1,3 +1,9 @@
+nginx-opi (1.0.9) testing; urgency=low
+
+  * Fixed http to https redirect on /
+
+ -- PA Nilsson <pa@openproducts.se>  Thu, 17 Jul 2014 18:23:40 +0200
+
 nginx-opi (1.0.8) testing; urgency=low
 
   * Added comments to nginx config

@@ -10,8 +10,8 @@ server {
 		root /var/www/static;
 	}
 
-	location /oc {
-	#redirect http requests for owncloud to https
+	location / {
+	#redirect http requests to https
 		rewrite ^(.*) https://$host$1 permanent;
 	}
 }
