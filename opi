@@ -7,10 +7,6 @@ server {
 	server_name localhost;
 
 	location / {
-		root /var/www/static;
-	}
-
-	location / {
 	#redirect http requests to https
 		rewrite ^(.*) https://$host$1 permanent;
 	}

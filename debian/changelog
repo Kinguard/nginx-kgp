@@ -1,3 +1,9 @@
+nginx-opi (1.0.10) testing; urgency=low
+
+  * Removed duplicate "/" instance in config file
+
+ -- PA Nilsson <pa@openproducts.se>  Mon, 21 Jul 2014 16:50:06 +0200
+
 nginx-opi (1.0.9) testing; urgency=low
 
   * Fixed http to https redirect on /
