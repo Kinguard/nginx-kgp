@@ -1,3 +1,9 @@
+nginx-opi (1.0.12) testing; urgency=low
+
+  * Bump to solve dual uploaded packages
+
+ -- Tor Krill <tor@openproducts.se>  Sun, 27 Jul 2014 12:48:06 +0200
+
 nginx-opi (1.0.11) testing; urgency=low
 
   * Update paths to certs and keys
