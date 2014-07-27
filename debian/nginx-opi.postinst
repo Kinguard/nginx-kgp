@@ -31,14 +31,14 @@ case "$1" in
 		ln -s /etc/nginx/sites-available/opi /etc/nginx/sites-enabled/
 	fi
 
-	if [ ! -e /etc/ssl/certs/opi.pem ]
+	if [ ! -e /etc/opi/opi.cert ]
 	then
-		ln -s /usr/share/nginx-opi/opi-tmpcert.pem /etc/ssl/certs/opi.pem
+		ln -s /usr/share/nginx-opi/opi-tmpcert.pem /etc/opi/opi.cert
 	fi
 
-	if [ ! -e /etc/ssl/private/opi.key ]
+	if [ ! -e /etc/opi/dnspriv.pem ]
 	then
-		ln -s /usr/share/nginx-opi/opi-tmpkey.pem /etc/ssl/private/opi.key
+		ln -s /usr/share/nginx-opi/opi-tmpkey.pem /etc/opi/dnspriv.pem
 	fi
 
 	# Fix permissions

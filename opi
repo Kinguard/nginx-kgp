@@ -15,8 +15,8 @@ server {
 	listen 443 ssl;
 	server_name localhost;
 
-	ssl_certificate /etc/ssl/certs/opi.pem;
-	ssl_certificate_key /etc/ssl/private/opi.key;
+	ssl_certificate /etc/opi/opi.cert;
+	ssl_certificate_key /etc/opi/dnspriv.pem;
 
 	client_max_body_size 10G;
 	fastcgi_buffers 64 4K;

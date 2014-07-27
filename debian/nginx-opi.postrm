@@ -29,14 +29,14 @@ case "$1" in
 		ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/
 	fi
 
-	if [ -L /etc/ssl/private/opi.key ]
+	if [ -L /etc/opi/dnspriv.pem ]
 	then
-		rm -f /etc/ssl/private/opi.key
+		rm -f /etc/opi/dnspriv.pem
 	fi
 
-	if [ -L /etc/ssl/certs/opi.pem ]
+	if [ -L /etc/opi/opi.cert ]
 	then
-		rm -f /etc/ssl/certs/opi.pem
+		rm -f /etc/opi/opi.cert
 	fi
 
 	invoke-rc.d --quiet nginx restart

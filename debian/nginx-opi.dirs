@@ -1,5 +1,3 @@
 /etc/nginx/apps
 /var/www/static
 /usr/share/nginx-opi
-/etc/ssl/certs
-/etc/ssl/private
