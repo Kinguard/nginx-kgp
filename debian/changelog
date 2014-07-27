@@ -1,3 +1,9 @@
+nginx-opi (1.0.13) testing; urgency=low
+
+  * Added default certs 
+
+ -- PA Nilsson <pa@openproducts.se>  Sun, 27 Jul 2014 21:02:51 +0200
+
 nginx-opi (1.0.12) testing; urgency=low
 
   * Bump to solve dual uploaded packages
