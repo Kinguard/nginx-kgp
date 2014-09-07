@@ -1,3 +1,9 @@
+nginx-opi (1.0.15) vili; urgency=low
+
+  * Disable access logging since its a bit verbose for emmc
+
+ -- Tor Krill <tor@openproducts.se>  Sun, 07 Sep 2014 17:02:44 +0200
+
 nginx-opi (1.0.14) vili; urgency=low
 
   * Increase fastcgi (php) timeout to 10 min
