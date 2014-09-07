@@ -20,6 +20,7 @@ server {
 
 	client_max_body_size 10G;
 	fastcgi_buffers 64 4K;
+	fastcgi_read_timeout 600;
 
 
 	include /etc/nginx/apps/*;
