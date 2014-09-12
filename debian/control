@@ -11,9 +11,10 @@ Depends: ${misc:Depends},
  ssl-cert,
  mysql-server,
  nginx-light,
- php5-xcache,
  php5-fpm,
+ php5-apcu,
  php5-mysqlnd
-Conflicts: libapache2-mod-php5filter, libphp5-embed
+Replaces: php5-xcache
+Conflicts: libapache2-mod-php5filter, libphp5-embed, php5-xcache
 Description: OPI generic nginx config
  Sets up deps and infrastructure for OPI nginx usage
