@@ -1,1 +1,5 @@
 *~
+debian/files
+debian/nginx-opi.debhelper.log
+debian/nginx-opi.substvars
+debian/nginx-opi
