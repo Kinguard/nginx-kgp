@@ -6,6 +6,9 @@ server {
 	listen 80;
 	server_name localhost;
 	access_log off;
+	root /var/www/static/;
+
+	include /etc/nginx/http_apps/*;
 
 	location / {
 	#redirect http requests to https
