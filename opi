@@ -20,8 +20,8 @@ server {
 	server_name localhost;
 	access_log off;
 
-	ssl_certificate /etc/opi/opi.cert;
-	ssl_certificate_key /etc/opi/dnspriv.pem;
+	ssl_certificate /etc/opi/web_cert.pem;
+	ssl_certificate_key /etc/opi/web_key.pem;
 	ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
 	ssl_prefer_server_ciphers on;
 	ssl_session_cache shared:SSL:1M;
