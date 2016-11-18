@@ -45,6 +45,16 @@ case "$1" in
 	chmod 0640 /usr/share/nginx-opi/opi-tmpkey.pem
 	chown root:ssl-cert /usr/share/nginx-opi/opi-tmpkey.pem
 
+	if [ ! -e /etc/opi/web_cert.pem ]
+	then
+		ln -s /etc/opi/opi.cert /etc/opi/web_cert.pem
+	fi
+
+	if [ ! -e /etc/opi/web_key.pem ]
+	then
+		ln -s /etc/opi/dnspriv.pem /etc/opi/web_key.pem
+	fi
+
 	invoke-rc.d --quiet nginx restart
     ;;
 
