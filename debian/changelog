@@ -1,3 +1,9 @@
+nginx-opi (1.1.4) vili; urgency=medium
+
+  * Updated php dep (use php7). 
+
+ -- PA Nilsson <pa@openproducts.se>  Thu, 20 Jul 2017 14:40:05 +0200
+
 nginx-opi (1.1.3) vili; urgency=medium
 
   * Createing default links for updated certificate paths 
