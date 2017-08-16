@@ -55,7 +55,11 @@ case "$1" in
 		ln -s /etc/opi/dnspriv.pem /etc/opi/web_key.pem
 	fi
 
-	invoke-rc.d --quiet nginx restart
+	if systemctl -q is-active nginx.service
+	then
+		systemctl -q reload nginx.service
+	fi
+
     ;;
 
     abort-upgrade|abort-remove|abort-deconfigure)

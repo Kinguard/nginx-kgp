@@ -1,3 +1,9 @@
+nginx-opi (1.1.5) vili; urgency=medium
+
+  * Update to use systemd
+
+ -- Tor Krill <tor@openproducts.se>  Wed, 16 Aug 2017 09:36:49 +0200
+
 nginx-opi (1.1.4) vili; urgency=medium
 
   * Updated php dep (use php7). 
