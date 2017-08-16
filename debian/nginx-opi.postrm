@@ -39,7 +39,10 @@ case "$1" in
 		rm -f /etc/opi/opi.cert
 	fi
 
-	invoke-rc.d --quiet nginx restart
+	if systemctl -q is-active nginx.service
+	then
+		systemctl -q reload nginx.service
+	fi
     ;;
 
     *)
