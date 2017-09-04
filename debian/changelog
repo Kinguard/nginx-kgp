@@ -1,14 +1,20 @@
-nginx-opi (1.1.6) vili; urgency=medium
+nginx-opi (1.1.7) vili; urgency=medium
 
   * Also update postrm script
 
  -- Tor Krill <tor@openproducts.se>  Wed, 16 Aug 2017 09:42:02 +0200
 
-nginx-opi (1.1.5) vili; urgency=medium
+nginx-opi (1.1.6) vili; urgency=medium
 
   * Update to use systemd
 
  -- Tor Krill <tor@openproducts.se>  Wed, 16 Aug 2017 09:36:49 +0200
+
+nginx-opi (1.1.5) vili; urgency=medium
+
+  * Updated site config to support php7 
+
+ -- PA Nilsson <pa@openproducts.se>  Mon, 04 Sep 2017 13:35:09 +0200
 
 nginx-opi (1.1.4) vili; urgency=medium
 
