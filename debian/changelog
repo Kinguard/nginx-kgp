@@ -1,3 +1,9 @@
+nginx-opi (1.1.5) vili; urgency=medium
+
+  * Updated site config to support php7 
+
+ -- PA Nilsson <pa@openproducts.se>  Mon, 04 Sep 2017 13:35:09 +0200
+
 nginx-opi (1.1.4) vili; urgency=medium
 
   * Updated php dep (use php7). 
