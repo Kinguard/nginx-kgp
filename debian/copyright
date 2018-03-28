@@ -1,11 +1,10 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: 
-Source: <url://example.com>
 
 Files: *
-Copyright: <years> <put author's name and email here>
-           <years> <likewise for another author>
-License: GPL-3.0+
+Copyright: 2014, 2017 Tor Krill <tor@openproducts.se>
+           2014, 2017 PA Nilsson <pa@openproducts.se> 
+License: AGPLv3
 
 Files: debian/*
 Copyright: 2014 Tor Krill <tor@openproducts.se>
