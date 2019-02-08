@@ -13,6 +13,6 @@ Depends: ${misc:Depends},
  nginx-light,
  php-fpm,
  php-apcu,
- php-mysqlnd
+ php-mysql
 Description: OPI generic nginx config
  Sets up deps and infrastructure for OPI nginx usage

@@ -1,3 +1,9 @@
+nginx-opi (1.1.8) vili; urgency=medium
+
+  * Update dep on php-mysql
+
+ -- Tor Krill <tor@openproducts.se>  Fri, 08 Feb 2019 13:27:53 +0100
+
 nginx-opi (1.1.7) vili; urgency=medium
 
   * Also update postrm script
