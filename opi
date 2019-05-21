@@ -34,7 +34,7 @@ server {
 	fastcgi_read_timeout 600;
 
 
-	include /etc/nginx/apps/*;
+	include /etc/nginx/apps/*.conf;
 
 	location / {
 		root /var/www/static;

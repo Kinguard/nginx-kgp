@@ -1,3 +1,9 @@
+nginx-opi (1.1.10) vili; urgency=medium
+
+  * Really change app config and not only http apps
+
+ -- Tor Krill <tor@openproducts.se>  Tue, 21 May 2019 16:06:39 +0200
+
 nginx-opi (1.1.9) vili; urgency=medium
 
   * Update nginx app-config. Only accept config files ending
