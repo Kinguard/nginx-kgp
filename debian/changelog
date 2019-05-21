@@ -1,3 +1,10 @@
+nginx-opi (1.1.9) vili; urgency=medium
+
+  * Update nginx app-config. Only accept config files ending
+    with .conf
+
+ -- Tor Krill <tor@openproducts.se>  Tue, 21 May 2019 15:20:49 +0200
+
 nginx-opi (1.1.8) vili; urgency=medium
 
   * Update dep on php-mysql
