@@ -1,3 +1,9 @@
+nginx-opi (1.1.11) vili; urgency=medium
+
+  * Buster update
+
+ -- Tor Krill <tor@openproducts.se>  Fri, 30 Aug 2019 10:59:37 +0200
+
 nginx-opi (1.1.10) vili; urgency=medium
 
   * Really change app config and not only http apps
