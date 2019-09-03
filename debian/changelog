@@ -1,3 +1,9 @@
+nginx-opi (1.1.12) vili; urgency=medium
+
+  * Update dep on database
+
+ -- Tor Krill <tor@openproducts.se>  Tue, 03 Sep 2019 08:30:03 +0200
+
 nginx-opi (1.1.11) vili; urgency=medium
 
   * Buster update
