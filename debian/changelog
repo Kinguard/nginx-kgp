@@ -1,3 +1,10 @@
+nginx-opi (1.1.13) vili; urgency=medium
+
+  * Fix path to php-socket since php upgraded
+  * Dynamically generate tempcert upon system first run
+
+ -- Tor Krill <tor@openproducts.se>  Mon, 16 Sep 2019 16:34:42 +0200
+
 nginx-opi (1.1.12) vili; urgency=medium
 
   * Update dep on database
