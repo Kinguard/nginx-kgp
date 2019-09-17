@@ -15,3 +15,7 @@ Kinguard Project
 tempname.kinguardproject.org
 .
 EOF
+
+# Make sure permissions are sane
+chmod 0640 /usr/share/nginx-opi/opi-tmpkey.pem
+chown root:ssl-cert /usr/share/nginx-opi/opi-tmpkey.pem

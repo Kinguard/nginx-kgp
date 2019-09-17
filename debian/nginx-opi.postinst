@@ -28,31 +28,31 @@ case "$1" in
 
 	if [ ! -e /etc/nginx/sites-enabled/opi ]
 	then
-		ln -s /etc/nginx/sites-available/opi /etc/nginx/sites-enabled/
+		ln -sf /etc/nginx/sites-available/opi /etc/nginx/sites-enabled/
 	fi
+
+	# Try to generate tmp cert already, will be regenerated
+	# by opi-postsetup as well if needed
+	/usr/share/opi-postsetup/scripts/55-createtmpcert
 
 	if [ ! -e /etc/opi/opi.cert ]
 	then
-		ln -s /usr/share/nginx-opi/opi-tmpcert.pem /etc/opi/opi.cert
+		ln -sf /usr/share/nginx-opi/opi-tmpcert.pem /etc/opi/opi.cert
 	fi
 
 	if [ ! -e /etc/opi/dnspriv.pem ]
 	then
-		ln -s /usr/share/nginx-opi/opi-tmpkey.pem /etc/opi/dnspriv.pem
+		ln -sf /usr/share/nginx-opi/opi-tmpkey.pem /etc/opi/dnspriv.pem
 	fi
-
-	# Fix permissions
-	chmod 0640 /usr/share/nginx-opi/opi-tmpkey.pem
-	chown root:ssl-cert /usr/share/nginx-opi/opi-tmpkey.pem
 
 	if [ ! -e /etc/opi/web_cert.pem ]
 	then
-		ln -s /etc/opi/opi.cert /etc/opi/web_cert.pem
+		ln -sf /etc/opi/opi.cert /etc/opi/web_cert.pem
 	fi
 
 	if [ ! -e /etc/opi/web_key.pem ]
 	then
-		ln -s /etc/opi/dnspriv.pem /etc/opi/web_key.pem
+		ln -sf /etc/opi/dnspriv.pem /etc/opi/web_key.pem
 	fi
 
 	if systemctl -q is-active nginx.service

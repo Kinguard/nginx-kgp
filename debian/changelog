@@ -1,3 +1,22 @@
+nginx-opi (1.1.16) vili; urgency=medium
+
+  * Generate tempcerts on postinst to make sure we have a usable
+    cert upon first boot
+
+ -- Tor Krill <tor@openproducts.se>  Tue, 17 Sep 2019 14:21:04 +0200
+
+nginx-opi (1.1.15) vili; urgency=medium
+
+  * Force replacement of symlinks to avoid postinst errors
+
+ -- Tor Krill <tor@openproducts.se>  Tue, 17 Sep 2019 10:03:18 +0200
+
+nginx-opi (1.1.14) vili; urgency=medium
+
+  * Fix postinst script to not try fix tempcert permissions
+
+ -- Tor Krill <tor@openproducts.se>  Mon, 16 Sep 2019 16:55:12 +0200
+
 nginx-opi (1.1.13) vili; urgency=medium
 
   * Fix path to php-socket since php upgraded
