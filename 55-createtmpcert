@@ -6,7 +6,7 @@ KEYFILE=/usr/share/nginx-opi/opi-tmpkey.pem
 #CERTFILE=testcert.pem
 #KEYFILE=testkey.pem
 
-openssl req -nodes  -x509 -newkey rsa:4096 -keyout $KEYFILE -out $CERTFILE -days 3650 2>/dev/null << EOF
+openssl req -nodes  -x509 -sha512 -newkey rsa:4096 -keyout $KEYFILE -out $CERTFILE -days 3650 2>/dev/null << EOF
 SE
 .
 .
