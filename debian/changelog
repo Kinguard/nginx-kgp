@@ -1,3 +1,9 @@
+nginx-opi (1.1.18) vili; urgency=medium
+
+  * Depend on kgp-ccheck since we need a cert-fix for buster
+
+ -- Tor Krill <tor@openproducts.se>  Thu, 10 Oct 2019 14:22:38 +0200
+
 nginx-opi (1.1.17) vili; urgency=medium
 
   * Make sure we use a safe digest when creating tempcerts

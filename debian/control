@@ -9,6 +9,7 @@ Package: nginx-opi
 Architecture: all
 Depends: ${misc:Depends},
  ssl-cert,
+ kgp-ccheck,
  kgp-database,
  nginx-light,
  php-fpm,
