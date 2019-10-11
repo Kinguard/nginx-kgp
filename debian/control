@@ -7,9 +7,9 @@ Standards-Version: 3.9.4
 
 Package: nginx-opi
 Architecture: all
+Pre-Depends: kgp-ccheck (>=1.19)
 Depends: ${misc:Depends},
  ssl-cert,
- kgp-ccheck,
  kgp-database,
  nginx-light,
  php-fpm,

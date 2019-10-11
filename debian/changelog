@@ -1,3 +1,9 @@
+nginx-opi (1.1.19) vili; urgency=medium
+
+  * Update dependency on kgp-ccheck, should pre-depend on it
+
+ -- Tor Krill <tor@openproducts.se>  Fri, 11 Oct 2019 11:59:00 +0200
+
 nginx-opi (1.1.18) vili; urgency=medium
 
   * Depend on kgp-ccheck since we need a cert-fix for buster
