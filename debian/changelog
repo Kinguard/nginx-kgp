@@ -1,3 +1,9 @@
+nginx-opi (1.1.20) vili; urgency=medium
+
+  * Make sure sites-enabled dir exists before trying to symlink file to it
+
+ -- Tor Krill <tor@openproducts.se>  Thu, 06 May 2021 11:39:27 +0200
+
 nginx-opi (1.1.19) vili; urgency=medium
 
   * Update dependency on kgp-ccheck, should pre-depend on it

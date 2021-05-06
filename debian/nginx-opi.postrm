@@ -24,7 +24,7 @@ case "$1" in
 
 	rm -f /etc/nginx/sites-enabled/opi
 
-	if [ ! -e /etc/nginx/sites-enabled/default ]
+	if [ -d /etc/nginx/sites-enabled -a ! -e /etc/nginx/sites-enabled/default ]
 	then
 		ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/
 	fi
