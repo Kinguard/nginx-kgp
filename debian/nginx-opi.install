@@ -1,3 +1,4 @@
 opi			/etc/nginx/sites-available
 robots.txt		/var/www/static
 55-createtmpcert	/usr/share/opi-postsetup/scripts/
+z-www-override.conf /etc/php/7.3/fpm/pool.d/

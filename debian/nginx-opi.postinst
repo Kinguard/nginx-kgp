@@ -60,6 +60,10 @@ case "$1" in
 		systemctl -q reload nginx.service
 	fi
 
+	if systemctl -q is-active php7.3-fpm.service
+	then
+		systemctl -q reload php7.3-fpm.service
+	fi
     ;;
 
     abort-upgrade|abort-remove|abort-deconfigure)
